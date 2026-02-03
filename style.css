@@ -88,3 +88,27 @@ footer a {
   color: #00d9ff;
   text-decoration: none;
 }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fade 1.5s forwards;
+}
+
+.fade-in.delay { animation-delay: 0.5s; }
+.fade-in.delay2 { animation-delay: 1s; }
+
+@keyframes fade {
+  to { opacity: 1; }
+}
+
